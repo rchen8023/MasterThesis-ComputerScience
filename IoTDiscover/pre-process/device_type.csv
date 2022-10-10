@@ -1,0 +1,40 @@
+ExteriorLock, lock
+InteriorLock, lock
+CorridorMotionSensor, motionSensor
+FrontDoorLock, lock
+WaterValve, valve
+FireSprinkler, switch
+WaterLeakSensor, waterSensor
+Light1, switch
+VacationMode, switch
+SurveillanceCamera, switch
+MyPresence, presenceSensor
+HallwayLight, switch
+HallwayMotionSensor, motionSensor
+MyAlarm, alarm
+MySmokeDetector, smokeDetector
+MyCo2Detector, carbonMonoxideDetector
+FloodSensor, waterSensor
+CoffeeMachine, switch
+Refrigerator, switch
+TV, switch
+GarageDoor, garageDoorControl
+SleepMode, switch
+AC, switch
+heater, switch
+LivingRoomWindow, switch
+Pod, presenceSensor
+IrrigationSprinkler, switch
+GardenMoistureSensor, waterSensor
+HomeMode, switch
+AwayMode, switch
+WaterPump, switch
+Thermostat, switch
+LightDimmer, switchLevel
+fan,switch
+HueMotionSensor1,motionSensor
+HueWhiteLamp1,switch
+smart-plug-1,switch
+smart-plug-2,switch
+temp,temperatureSensor
+door,lock

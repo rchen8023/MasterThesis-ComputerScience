@@ -1,0 +1,11 @@
+lock, lock
+motionSensor, motion
+valve, valve
+switch, switch
+waterSensor, water
+presenceSensor, presence
+alarm, alarm
+smokeDetector, smoke
+carbonMonoxideDetector, carbonMonoxide
+garageDoorControl, door
+switchLevel, level

@@ -1,0 +1,13 @@
+smart_things:
+    policy_manager_appname: PolicyManager
+    policy_manager_template_file_path_1: testing/res/policy_manager_1.tmpl
+    policy_manager_template_file_path_2: testing/res/policy_manager_2.tmpl
+    trigger_actions: testing/triggeraction_new.json
+    preprocessed_smartapps_folder: testing/prep_smartapps
+    author_name: Rui Chen
+    author_namespace: ruichenpolicy
+    authentication_token: 0e11eabf-6f7a-4c37-9c9d-86f066769568
+    actions_list: testing/res/actions.csv
+    instrumentation_log_path: testing/res/log.txt
+    device_type_file: testing/res/deviceType_attr.csv
+    condition_file: testing/res/safty_conditions.json

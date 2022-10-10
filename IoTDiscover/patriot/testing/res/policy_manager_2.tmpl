@@ -1,0 +1,131 @@
+definition(
+    name: "@{POLICY_MANAGER_APP_NAME}",
+	author: "@{AUTHOR_NAME}",
+	description: "This is a policy manager written to enforce the user policies while running the instrumented SmartApps.",
+    namespace: "@{AUTHOR_NAMESPACE}",
+    singleInstance: true,
+	iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
+    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
+
+preferences {
+    page(name: "AppPage", title: "My SmartApps and their devices", install: true, uninstall: true) {
+        section ("Instrumented SmartApps:") {
+//@{INSTRUMENTED_SMARTAPPS_LIST_SECTION}
+        }
+    }
+}
+
+def installed() {
+	initialize()
+}
+
+def updated() {
+	unsubscribe()
+	initialize()
+}
+
+def initialize() {
+
+//@{INITIALIZING_POLICIES_SECTION}
+
+}
+
+//@{ENCODED_POLICIES_SECTION}
+
+def verify(automation_unit, evt, action_device, action_command, action_command_arg) {
+	def permission = false
+    def myDevices = getDevices()
+	try{
+    	if(action_device.size != 0){action_device = action_device[0]}
+    } catch(e) {}
+	automation_unit = automation_unit.toLowerCase().replaceAll(" ","-")
+
+//@{POLICIES_PERMISSION_SECTION}
+
+
+    return permission
+}
+
+
+
+def since(p, q, tss, i, l, r, current_time, idx, bounded) {
+	if (q) {
+    	tss.get(i).get("q").put("i", idx)
+        tss.get(i).get("q").put("tau", current_time)
+    }
+    if (p) {
+    	if (tss.get(i).get("p") == null) {
+        	tss.get(i).put("p", idx)
+        }
+    }
+    else {
+    	tss.get(i).put("p", null)
+    }
+    def tss_q = tss.get(i).get("q")
+    def tss_p = tss.get(i).get("p")
+    def q_tau = tss_q.get("tau")
+    def q_i = tss_q.get("i")
+    if (tss_q != null && tss_p != null && q_tau != null) {
+    	if (bounded) {
+    		def period = time_diff_sec(current_time, q_tau)
+    		return ((q_i <= idx) && (tss_p <= q_i + 1) && (period >= l && period <= r))
+        }
+        else {
+        	return ((q_i <= idx) && (tss_p <= q_i + 1))
+        }
+    }
+    else {
+    	return false
+    }
+
+}
+
+def once(p, tss, i, l, r, current_time, idx, bounded) {
+	return since(true, p, tss, i, l, r, current_time, idx, bounded)
+}
+
+def lastly(p, prv, tss, i, l, r, current_time, bounded) {
+	def y = false
+    if (prv) {
+    	if (bounded) {
+        	def period = time_diff_sec(current_time, tss.get(i).get("tau"))
+        	y = period >= l && period <= r
+        }
+        else {
+        	y = true
+        }
+    }
+    if (p) {
+    	tss.get(i).put("tau", current_time)
+    }
+    return y
+}
+
+
+def implies(p, q) {
+	return (!p || q)
+}
+
+def time_diff_sec (t2 , t1) {
+	if (t2 < t1) {
+    	return -1
+    }
+    else {
+    	return (t2 - t1)
+    }
+}
+
+def getDevices() {
+	def mydevices = [:]
+	def children = getChildApps()
+	for (child in children) {
+    	def mysettings = child?.getChildAppDevices()
+        for (s in mysettings) {
+            if (!mydevices.containsKey(s.value.toString())) {
+                mydevices.put(s.value.toString(), s.value)
+            }
+        }
+    }
+    return mydevices
+}

@@ -1,0 +1,1087 @@
+{
+  "AbusingPermission-BatteryMonitor": [],
+  "Adware-CODetector": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "COSmoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule1"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "Adware-CODetector",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule2"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "Adware-CODetector",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule3"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "COSmoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule4"
+    }
+  ],
+  "AdWare": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "AdWare",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule5"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "AdWare",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule6"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "carbonMonoxide.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule7"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule8"
+    }
+  ],
+  "App Update-PowersOutAlert": [],
+  "AppUpdate": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.battery",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule9"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.mains",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule10"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.dc",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule11"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.battery",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule12"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.battery",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule13"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.mains",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule14"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "AppUpdate",
+      "trigger_attr": "powerSource.dc",
+      "trigger_channel": -1,
+      "trigger_device": "lockMotion",
+      "ruleID": "rule15"
+    }
+  ],
+  "Backdoor-pincode-injection": [],
+  "creating-Seizures-Using-Strobed-light": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "themotionsensor",
+      "ruleID": "rule16"
+    }
+  ],
+  "CreatingSeizures": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "themotion",
+      "ruleID": "rule17"
+    }
+  ],
+  "DisableVacationMode": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "DisableVacationMode",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule18"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "light",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule19"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "light",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule20"
+    }
+  ],
+  "Disabling-vacation-mode": [
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "light",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule21"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "light",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule22"
+    }
+  ],
+  "Door-lock-pin-code-snooping": [],
+  "DoorLockPinSnooping": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "DoorLockPinSnooping",
+      "trigger_attr": "state.subscribeValue",
+      "trigger_channel": -1,
+      "trigger_device": "b",
+      "ruleID": "rule23"
+    }
+  ],
+  "DriveByDownload": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "DriveByDownload",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule24"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "DriveByDownload",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule25"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "DriveByDownload",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule26"
+    }
+  ],
+  "FakeAlarm": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "FakeAlarm",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule27"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "carbonMonoxide.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule28"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule29"
+    }
+  ],
+  "ID10DynamicPage+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ID10DynamicPage+",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule30"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ID10DynamicPage+",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule31"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ID10DynamicPage+",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule32"
+    }
+  ],
+  "ID11.1DataLeak+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "themotion",
+      "ruleID": "rule33"
+    }
+  ],
+  "ID11SensitiveDataLeak+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ID11SensitiveDataLeak+",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "switches",
+      "ruleID": "rule34"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ID11SensitiveDataLeak+",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "switches",
+      "ruleID": "rule35"
+    }
+  ],
+  "ID12AlarmSoundsTurnOnLights+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "mySwitch",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule36"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule37"
+    }
+  ],
+  "ID12RemoteCommand+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule38"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule39"
+    }
+  ],
+  "ID13RunTimeLogicRequired+": [],
+  "ID13SwitchOnSetHomeMode+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ID13SwitchOnSetHomeMode+",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule40"
+    }
+  ],
+  "ID14LockDoorWhenHomeModeSet+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "ID14LockDoorWhenHomeModeSet+",
+      "trigger_attr": "mode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule41"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "lock",
+      "trigger_attr": "mode.Home",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule42"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ID14LockDoorWhenHomeModeSet+",
+      "trigger_attr": "mode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule43"
+    }
+  ],
+  "ID15CreateGeneralPropertyViolations+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule44"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule45"
+    }
+  ],
+  "ID16.1SleepingModeChange+": [],
+  "ID16SleepingModeChange+": [],
+  "ID17SleepingModeTurnOffDevices+": [],
+  "ID18setHomeModeLivingRoomLightsOn+": [],
+  "ID19homeModeTurnOnSwitches": [],
+  "ID1BrightenMyPath+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule46"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule47"
+    }
+  ],
+  "ID20goodnight": [
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "SonosAlarm",
+      "trigger_attr": "bedroomSwitch.off",
+      "trigger_channel": -1,
+      "trigger_device": "bedroomSwitch",
+      "ruleID": "rule48"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "coffeeMacSwitch",
+      "trigger_attr": "bedroomSwitch.off",
+      "trigger_channel": -1,
+      "trigger_device": "bedroomSwitch",
+      "ruleID": "rule49"
+    }
+  ],
+  "ID21SimulateOcupancy": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule50"
+    }
+  ],
+  "ID2SecuritySystem+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ID2SecuritySystem+",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence",
+      "ruleID": "rule51"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence",
+      "ruleID": "rule52"
+    }
+  ],
+  "ID3SmokeAlarm+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule53"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule54"
+    }
+  ],
+  "ID3TurnItOnOffandOnEvery30Secs+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule55"
+    }
+  ],
+  "ID4PowerAllowance+": [],
+  "ID5.1FakeAlarm+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "carbonMonoxide.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule56"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ID5.1FakeAlarm+",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule57"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule58"
+    }
+  ],
+  "ID5DynamicMethodInvocationAlarm+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule59"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "ID5DynamicMethodInvocationAlarm+",
+      "trigger_attr": "alarm.strobe",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule60"
+    }
+  ],
+  "ID6TurnOnSwitchNotHome+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "presence != not",
+      "trigger_channel": -1,
+      "trigger_device": "person",
+      "ruleID": "rule61"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "thelock",
+      "trigger_attr": "presence != not",
+      "trigger_channel": -1,
+      "trigger_device": "person",
+      "ruleID": "rule62"
+    }
+  ],
+  "ID7ConflictTimeandPresenceSensor+": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule63"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "startTimerCallback",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule64"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule65"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "stopTimerCallback",
+      "trigger_channel": -1,
+      "trigger_device": "stopTime",
+      "ruleID": "rule66"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "person",
+      "ruleID": "rule67"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "person",
+      "ruleID": "rule68"
+    }
+  ],
+  "ID8.1LocationModeChangeFail+": [],
+  "ID8LocationSubscribeFailure+": [],
+  "ID9DisableVacationMode+": [
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "light",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule69"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ID9DisableVacationMode+",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule70"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "light",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule71"
+    }
+  ],
+  "InstallingAttack": [],
+  "IPC--MaliciousCameraIPC&&PresenceSensor": [],
+  "IPC-part2": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule72"
+    }
+  ],
+  "IPC": [],
+  "LeakingInformation": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "themotion",
+      "ruleID": "rule73"
+    }
+  ],
+  "Lock-access-revocation_logging-evasion": [],
+  "LockAccessRevocation": [],
+  "PemissionAbuse": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "PemissionAbuse",
+      "trigger_attr": "battery",
+      "trigger_channel": -1,
+      "trigger_device": "thebatterymo",
+      "ruleID": "rule74"
+    }
+  ],
+  "PinCodeInjection": [],
+  "Ransomware-WaterValve": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule75"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule76"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "Ransomware-WaterValve",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule77"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "Ransomware-WaterValve",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule78"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "Ransomware-WaterValve",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule79"
+    },
+    {
+      "action_channel": [
+        "humidity",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "valve",
+      "trigger_attr": "alarm.strobe",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule80"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "valve",
+      "trigger_attr": "alarm.off",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule81"
+    }
+  ],
+  "Ransomware": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule82"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule83"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "Ransomware",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule84"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "Ransomware",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule85"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "close",
+      "action_device": "valve",
+      "trigger_attr": "alarm.off",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule86"
+    }
+  ],
+  "Remote-command-SmokeDetector": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "Remote-command-SmokeDetector",
+      "trigger_attr": "alarm.strobe",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule87"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule88"
+    }
+  ],
+  "RemoteCommand": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule89"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "RemoteCommand",
+      "trigger_attr": "alarm.strobe",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule90"
+    }
+  ],
+  "RemoteCommand2": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "RemoteCommand2",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "Location",
+      "ruleID": "rule91"
+    }
+  ],
+  "RemoteControl-FireAlarm": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule92"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule93"
+    }
+  ],
+  "RemoteControl": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule94"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule95"
+    }
+  ],
+  "Repackaging": [],
+  "Repackeging--BonVoyage": [],
+  "ShadowPayload-AutoCamera2": [],
+  "ShadowPayload": [],
+  "SideChannel-LightController": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "themotionsensor",
+      "ruleID": "rule96"
+    }
+  ],
+  "SpecificWeakness": [],
+  "SpecificWeaknesses-autoCamera": [],
+  "SpyAllEvents": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule97"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "SpyAllEvents",
+      "trigger_attr": "spyHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule98"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "SpyAllEvents",
+      "trigger_attr": "it",
+      "trigger_channel": -1,
+      "trigger_device": "v.id",
+      "ruleID": "rule99"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule100"
+    }
+  ],
+  "Spyware-AlarmManager": [],
+  "spyware": [],
+  "SurreptitionsSurveilance": [],
+  "Surreptitious-Surveillanc": [],
+  "Systemevents-MidnightCamera": [],
+  "Undesired-unlocking": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "myswitch",
+      "trigger_attr": "presence != not",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule101"
+    }
+  ],
+  "UndesiredLocking": [
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "mylock",
+      "trigger_attr": "presence != not",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule102"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "mylock",
+      "trigger_attr": "presence != not",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule103"
+    }
+  ],
+  "UserEvent": [
+    {
+      "action_channel": -1,
+      "action_cmd": "strobe",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule104"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarm",
+      "trigger_attr": "smoke.clear",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule105"
+    }
+  ],
+  "Userevents-LockManager": []
+}

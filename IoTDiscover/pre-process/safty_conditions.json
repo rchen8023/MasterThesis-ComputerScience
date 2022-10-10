@@ -1,0 +1,263 @@
+{
+    "1": {
+        "No": "1",
+        "action_device": "AC",
+        "action_cmd": "on",
+        "condition_device": "heater",
+        "condition_cmd": "off",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "2": {
+        "No": "2",
+        "action_device": "alarm",
+        "action_cmd": "siren",
+        "condition_device": "smokeDetector",
+        "condition_cmd": "smoke",
+        "condition_state": "is",
+        "condition_time": "within 60s"
+    },
+    "3": {
+        "No": "3",
+        "action_device": "alarm",
+        "action_cmd": "siren",
+        "condition_device": "carbonMonoxideDetector",
+        "condition_cmd": "detected",
+        "condition_state": "is",
+        "condition_time": "within 60s"
+    },
+    "4": {
+        "No": "4",
+        "action_device": "alarm",
+        "action_cmd": "siren",
+        "condition_device": "motionSensor",
+        "condition_cmd": "active",
+        "condition_state": "is",
+        "condition_time": "within 60s"
+    },
+    "5": {
+        "No": "5",
+        "action_device": "awayMode",
+        "action_cmd": "on",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "not present",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "6": {
+        "No": "6",
+        "action_device": "camera",
+        "action_cmd": "off",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "present",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "7": {
+        "No": "7",
+        "action_device": "coffee",
+        "action_cmd": "on",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "present",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "8": {
+        "No": "8",
+        "action_device": "coffee",
+        "action_cmd": "off",
+        "condition_device": "coffee",
+        "condition_cmd": "on",
+        "condition_state": "is",
+        "condition_time": "within 30s"
+    },
+    "9": {
+        "No": "9",
+        "action_device": "heater",
+        "action_cmd": "on",
+        "condition_device": "AC",
+        "condition_cmd": "off",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "10": {
+        "No": "10",
+        "action_device": "homeMode",
+        "action_cmd": "on",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "present",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "11": {
+        "No": "11",
+        "action_device": "light",
+        "action_cmd": "on",
+        "condition_device": "vacationMode",
+        "condition_cmd": "on",
+        "condition_state": "not",
+        "condition_time": "None"
+    },
+    "12": {
+        "No": "12",
+        "action_device": "light",
+        "action_cmd": "on",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "present",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "13": {
+        "No": "13",
+        "action_device": "light",
+        "action_cmd": "on",
+        "condition_device": "motionSensor",
+        "condition_cmd": "active",
+        "condition_state": "is",
+        "condition_time": "within 20s"
+    },
+    "14": {
+        "No": "14",
+        "action_device": "light",
+        "action_cmd": "off",
+        "condition_device": "light",
+        "condition_cmd": "on",
+        "condition_state": "is",
+        "condition_time": "within 30s"
+    },
+    "15": {
+        "No": "15",
+        "action_device": "lock",
+        "action_cmd": "unlock",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "present",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "16": {
+        "No": "16",
+        "action_device": "lock",
+        "action_cmd": "unlock",
+        "condition_device": "sleepSensor",
+        "condition_cmd": "not sleeping",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "17": {
+        "No": "17",
+        "action_device": "lock",
+        "action_cmd": "unlock",
+        "condition_device": "smokeDetector",
+        "condition_cmd": "smoke",
+        "condition_state": "is",
+        "condition_time": "within 60s"
+    },
+    "18": {
+        "No": "18",
+        "action_device": "pump",
+        "action_cmd": "off",
+        "condition_device": "pump",
+        "condition_cmd": "on",
+        "condition_state": "is",
+        "condition_time": "within 120s"
+    },
+    "19": {
+        "No": "19",
+        "action_device": "pump",
+        "action_cmd": "off",
+        "condition_device": "waterSensor",
+        "condition_cmd": "dry",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "20": {
+        "No": "20",
+        "action_device": "thermostat",
+        "action_cmd": "off",
+        "condition_device": "thermostat",
+        "condition_cmd": "on",
+        "condition_state": "is",
+        "condition_time": "within 20s"
+    },
+    "21": {
+        "No": "21",
+        "action_device": "TV",
+        "action_cmd": "off",
+        "condition_device": "TV",
+        "condition_cmd": "on",
+        "condition_state": "is",
+        "condition_time": "within 30s"
+    },
+    "22": {
+        "No": "22",
+        "action_device": "valve",
+        "action_cmd": "close",
+        "condition_device": "fire-sprinkler",
+        "condition_cmd": "off",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "23": {
+        "No": "23",
+        "action_device": "valve",
+        "action_cmd": "close",
+        "condition_device": "waterLeak",
+        "condition_cmd": "on",
+        "condition_state": "is",
+        "condition_time": "within 60s"
+    },
+    "24": {
+        "No": "24",
+        "action_device": "window",
+        "action_cmd": "on",
+        "condition_device": "heater",
+        "condition_cmd": "off",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "25": {
+        "No": "25",
+        "action_device": "window",
+        "action_cmd": "on",
+        "condition_device": "AC",
+        "condition_cmd": "off",
+        "condition_state": "is",
+        "condition_time": "None"
+    },
+    "26": {
+        "No": "26",
+        "action_device": "window",
+        "action_cmd": "on",
+        "condition_device": "window",
+        "condition_cmd": "open",
+        "condition_state": "is",
+        "condition_time": "within 30s"
+    },
+    "27": {
+        "No": "27",
+        "action_device": "window",
+        "action_cmd": "on",
+        "condition_device": "motionSensor",
+        "condition_cmd": "active",
+        "condition_state": "is",
+        "condition_time": "within 60s"
+    },
+    "28": {
+        "No": "28",
+        "action_device": "window",
+        "action_cmd": "open",
+        "condition_device": "vacationMode",
+        "condition_cmd": "on",
+        "condition_state": "not",
+        "condition_time": "None"
+    },
+    "29": {
+        "No": "29",
+        "action_device": "window",
+        "action_cmd": "open",
+        "condition_device": "presenceSensor",
+        "condition_cmd": "present",
+        "condition_state": "is",
+        "condition_time": "None"
+    }
+}

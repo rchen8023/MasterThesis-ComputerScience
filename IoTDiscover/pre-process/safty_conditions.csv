@@ -1,0 +1,30 @@
+No,action_device,action_cmd,condition_device,condition_cmd,condition_state,condition_time
+1,AC,on,heater,off,is,None
+2,alarm,siren,smokeDetector,smoke,is,within 60s
+3,alarm,siren,carbonMonoxideDetector,detected,is,within 60s
+4,alarm,siren,motionSensor,active,is,within 60s
+5,awayMode,on,presenceSensor,not present,is,None
+6,camera,off,presenceSensor,present,is,None
+7,coffee,on,presenceSensor,present,is,None
+8,coffee,off,coffee,on,is,within 30s
+9,heater,on,AC,off,is,None
+10,homeMode,on,presenceSensor,present,is,None
+11,light,on,vacationMode,on,not,None
+12,light,on,presenceSensor,present,is,None
+13,light,on,motionSensor,active,is,within 20s
+14,light,off,light,on,is,within 30s
+15,lock,unlock,presenceSensor,present,is,None
+16,lock,unlock,sleepSensor,not sleeping,is,None
+17,lock,unlock,smokeDetector,smoke,is,within 60s
+18,pump,off,pump,on,is,within 120s
+19,pump,off,waterSensor,dry,is,None
+20,thermostat,off,thermostat,on,is,within 20s
+21,TV,off,TV,on,is,within 30s
+22,valve,close,fire-sprinkler,off,is,None
+23,valve,close,waterLeak,on,is,within 60s
+24,window,on,heater,off,is,None
+25,window,on,AC,off,is,None
+26,window,on,window,open,is,within 30s
+27,window,on,motionSensor,active,is,within 60s
+28,window,open,vacationMode,on,not,None
+29,window,open,presenceSensor,present,is,None

@@ -1,0 +1,7 @@
+fan,fan
+HueMotionSensor 1,motionSensor
+HueWhiteLamp1,light
+smart-plug-1,switch
+smart-plug-2,window
+temp,temperatureSensor
+heater,heater

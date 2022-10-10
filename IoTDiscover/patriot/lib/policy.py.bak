@@ -1,0 +1,192 @@
+from lib.PATRIOTVisitor import PATRIOTVisitor
+from lib.PATRIOTParser import PATRIOTParser
+
+import enum
+
+
+class Policy:
+    pass
+
+
+class Permission(enum.Enum):
+    DENY = 0
+    ALLOW = 1
+
+
+class AST_Node:
+    def __init__(self):
+        self.type = None
+        self.value = None
+        self.children = []
+
+    def get_reverse_children(self):
+        children = self.children[:]
+        children.reverse()
+        return children
+
+
+class PolicyVisitor(PATRIOTVisitor):
+    def __init__(self):
+        self.policies = []
+
+    def visitPolicy_statement(self, ctx: PATRIOTParser.Policy_statementContext):
+        pol = Policy()
+        pol.name = ctx.STRING()
+        pol.permission, pol.target, pol.condition, pol.except_cond = ctx.body().accept(self)
+        self.policies.append(pol)
+
+    def visitBody(self, ctx:PATRIOTParser.BodyContext):
+        permission = ctx.permission_clause().accept(self)
+        target = ctx.target_clause().accept(self)
+        condition = ctx.getChild(4).accept(self)
+        except_cond = None
+        if ctx.EXCEPT():
+            except_cond = ctx.getChild(6).accept(self)
+        return permission, target, condition, except_cond
+
+    def visitPermission_clause(self, ctx:PATRIOTParser.Permission_clauseContext):
+        if ctx.ALLOW():
+            return Permission.ALLOW
+        else:
+            return Permission.DENY
+
+    def visitTarget_clause(self, ctx: PATRIOTParser.Target_clauseContext):
+        if ctx.EVERYTHING():
+            everything_node = AST_Node()
+            everything_node.type = 'everything'
+            everything_node.value = 'true'
+            return everything_node
+        else:
+            return ctx.action_clause().accept(self)
+
+    def visitAction_clause(self, ctx:PATRIOTParser.Action_clauseContext):
+        action_node = AST_Node()
+        action_node.type = 'action'
+        action_node.value = 'action'
+        action_node.children.append(ctx.getChild(2).getText())
+        if ctx.getChildCount() > 4:
+            action_node.children.append(ctx.getChild(3).getText())
+        if ctx.getChildCount() > 6:
+            action_node.children.append(ctx.value().accept(self))
+        return action_node
+
+    def visitPropositional_clause(self, ctx:PATRIOTParser.Propositional_clauseContext):
+        if ctx.attribute():
+            attribute_node = AST_Node()
+            attribute_node.type = 'attribute'
+            attribute_node.value = ctx.operator().getText()
+            name = ctx.attribute().accept(self)
+            attribute_node.children.append(name)
+            value = ctx.value().accept(self)
+            attribute_node.children.append(value)
+            return attribute_node
+        if ctx.NOT():
+            not_node = AST_Node()
+            not_node.type = 'not_prop'
+            not_node.value = 'not'
+            not_node.children.append(ctx.getChild(1).accept(self))
+            return not_node
+        else:
+            bexp_node = AST_Node()
+            bexp_node.type = 'bexp_prop'
+            bexp_node.value = ctx.boolean_operator().getText().lower()
+            bexp_node.children.append(ctx.getChild(0).accept(self))
+            bexp_node.children.append(ctx.getChild(2).accept(self))
+            return bexp_node
+
+    def visitCondition_clause(self, ctx: PATRIOTParser.Condition_clauseContext):
+        if (ctx.getChildCount() > 2) and type(ctx.getChild(0)).__name__ == "Propositional_clauseContext":
+            bexp_node = AST_Node()
+            bexp_node.type = 'bexp_prop_mlt'
+            bexp_node.value = ctx.boolean_operator().getText().lower()
+            bexp_node.children.append(ctx.getChild(0).accept(self))
+            bexp_node.children.append(ctx.getChild(2).accept(self))
+            return bexp_node
+        elif (ctx.getChildCount() > 2) and type(ctx.getChild(0)).__name__ == "Mtl_clauseContext":
+            bexp_node = AST_Node()
+            bexp_node.type = 'bexp_mlt_prop'
+            bexp_node.value = ctx.boolean_operator().getText().lower()
+            bexp_node.children.append(ctx.getChild(0).accept(self))
+            bexp_node.children.append(ctx.getChild(2).accept(self))
+            return bexp_node
+        else:
+            return ctx.getChild(0).accept(self)
+
+    def visitMtl_clause(self, ctx: PATRIOTParser.Mtl_clauseContext):
+        if ctx.NOT():
+            not_node = AST_Node()
+            not_node.type = 'not_mlt'
+            not_node.value = 'not'
+            not_node.children.append(ctx.getChild(1).accept(self))
+            return not_node
+        elif ctx.boolean_operator():
+            bexp_node = AST_Node()
+            bexp_node.type = 'bexp_mlt'
+            bexp_node.value = ctx.boolean_operator().getText().lower()
+            bexp_node.children.append(ctx.getChild(0).accept(self))
+            bexp_node.children.append(ctx.getChild(2).accept(self))
+            return bexp_node
+        else:
+            return ctx.getChild(0).accept(self)
+
+    def visitSince_clause(self, ctx: PATRIOTParser.Since_clauseContext):
+        since_node = AST_Node()
+        if ctx.WITHIN():
+            since_node.type = 'mlt_since_interval'
+            since_node.value = ctx.NUMBER().getText()
+        else:
+            since_node.type = 'mlt_since'
+        since_node.children.append(ctx.getChild(2).accept(self))
+        since_node.children.append(ctx.getChild(4).accept(self))
+        return since_node
+
+    def visitOnce_clause(self, ctx: PATRIOTParser.Once_clauseContext):
+        once_node = AST_Node()
+        if ctx.WITHIN():
+            once_node.type = 'mlt_once_interval'
+            once_node.value = ctx.NUMBER().getText()
+        else:
+            once_node.type = 'mlt_once'
+        once_node.children.append(ctx.getChild(2).accept(self))
+        return once_node
+
+    def visitLastly_clause(self, ctx: PATRIOTParser.Lastly_clauseContext):
+        lastly_node = AST_Node()
+        if ctx.WITHIN():
+            lastly_node.type = 'mlt_lastly_interval'
+            lastly_node.value = ctx.NUMBER().getText()
+        else:
+            lastly_node.type = 'mlt_lastly'
+        lastly_node.children.append(ctx.getChild(2).accept(self))
+        return lastly_node
+
+    def visitAttribute(self, ctx: PATRIOTParser.AttributeContext):
+        if ctx.device_state() or ctx.date_time_key():
+            return ctx.getChild(0).accept(self)
+        else:
+            return ctx.getChild(0).getText()
+
+    def visitDevice_state(self, ctx: PATRIOTParser.Device_stateContext):
+        return ctx.getChild(2).getText()
+
+    def visitDate_time_key(self, ctx:PATRIOTParser.Date_time_keyContext):
+        return ctx.getChild(0).getText()
+
+    def visitValue(self, ctx: PATRIOTParser.ValueContext):
+        value_node = AST_Node()
+        if ctx.NUMBER():
+            value_node.type = 'number'
+            value_node.value = ctx.getText()
+        elif ctx.BOOLEAN():
+            value_node.type = 'boolean'
+            value_node.value = ctx.getText().lower()
+        elif ctx.TIME():
+            value_node.type = 'time'
+            value_node.value = ctx.getText()
+        elif ctx.DATE():
+            value_node.type = 'date'
+            value_node.value = ctx.getText()
+        else:
+            value_node.type = 'string'
+            value_node.value = ctx.getText()
+        return value_node

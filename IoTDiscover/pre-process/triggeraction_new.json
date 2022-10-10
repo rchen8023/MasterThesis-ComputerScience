@@ -1,0 +1,6279 @@
+{
+  "alfred-workflow": [],
+  "auto-humidity-vent": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "fans",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humidity_sensor",
+      "ruleID": "rule1"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "auto-humidity-vent",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humidity_sensor",
+      "ruleID": "rule2"
+    },
+    {
+      "action_channel": [
+        "temperature",
+        0
+      ],
+      "action_cmd": "on",
+      "action_device": "fans",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humidity_sensor",
+      "ruleID": "rule3"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "auto-humidity-vent",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humidity_sensor",
+      "ruleID": "rule4"
+    }
+  ],
+  "beacon-control": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "beacon-control",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule5"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "departLocks",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule6"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "arrivalOnSwitches",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule7"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "arrivalOffSwitches",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule8"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "arrivalLocks",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule9"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "departOffSwitches",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule10"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "departOnSwitches",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule11"
+    }
+  ],
+  "beaconthings-manager": [],
+  "big-turn-off": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule12"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule13"
+    }
+  ],
+  "big-turn-on": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule14"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule15"
+    }
+  ],
+  "bon-voyage": [],
+  "bose-soundtouch-connect": [],
+  "bose-soundtouch-control": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule16"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule17"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule18"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule19"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule20"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule21"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule22"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule23"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule24"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule25"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule26"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule27"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule28"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule29"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule30"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "bose",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule31"
+    }
+  ],
+  "bright-when-dark-and-or-bright-after-sunset": [
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "lights",
+      "trigger_attr": "illuminance > luxLevel",
+      "trigger_channel": [
+        "illuminance",
+        1
+      ],
+      "trigger_device": "lightSensor",
+      "ruleID": "rule32"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "lights",
+      "trigger_attr": "illuminance > 999",
+      "trigger_channel": [
+        "illuminance",
+        1
+      ],
+      "trigger_device": "lightSensor",
+      "ruleID": "rule33"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensor",
+      "ruleID": "rule34"
+    }
+  ],
+  "brighten-dark-places": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule35"
+    }
+  ],
+  "brighten-my-path": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule36"
+    }
+  ],
+  "button-controller": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "button-controller",
+      "trigger_attr": "button",
+      "trigger_channel": -1,
+      "trigger_device": "buttonDevice",
+      "ruleID": "rule37"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "button-controller",
+      "trigger_attr": "button",
+      "trigger_channel": -1,
+      "trigger_device": "buttonDevice",
+      "ruleID": "rule38"
+    }
+  ],
+  "camera-power-scheduler": [],
+  "cameras-on-when-im-away": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches1",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule39"
+    }
+  ],
+  "carpool-notifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "carpool-notifier",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "driver",
+      "ruleID": "rule40"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "carpool-notifier",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "driver",
+      "ruleID": "rule41"
+    }
+  ],
+  "close-the-valve": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "close-the-valve",
+      "trigger_attr": "water",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule42"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "close",
+      "action_device": "valve",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule43"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "close-the-valve",
+      "trigger_attr": "water",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule44"
+    }
+  ],
+  "coffee-after-shower": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "coffee",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "bathroom",
+      "ruleID": "rule45"
+    }
+  ],
+  "color-coordinator": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "master",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "master",
+      "ruleID": "rule46"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "slaves",
+      "trigger_attr": "level",
+      "trigger_channel": -1,
+      "trigger_device": "master",
+      "ruleID": "rule47"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "slaves",
+      "trigger_attr": "hue",
+      "trigger_channel": -1,
+      "trigger_device": "master",
+      "ruleID": "rule48"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "slaves",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "master",
+      "ruleID": "rule49"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "slaves",
+      "trigger_attr": "saturation",
+      "trigger_channel": -1,
+      "trigger_device": "master",
+      "ruleID": "rule50"
+    }
+  ],
+  "curb-control": [],
+  "curling-iron": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "outlets",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensors",
+      "ruleID": "rule51"
+    }
+  ],
+  "darken-behind-me": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "motion.inactive",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule52"
+    }
+  ],
+  "device-tile-controller": [],
+  "door-jammed-notification": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "door-jammed-notification",
+      "trigger_attr": "doorState",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule53"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "door-jammed-notification",
+      "trigger_attr": "doorState",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule54"
+    }
+  ],
+  "door-knocker": [],
+  "door-state-to-color-light-hue-bulb": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setHue",
+      "action_device": "bulbs",
+      "trigger_attr": "doorState",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule55"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "bulbs",
+      "trigger_attr": "doorState",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule56"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setSaturation",
+      "action_device": "bulbs",
+      "trigger_attr": "doorState",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule57"
+    }
+  ],
+  "double-tap": [],
+  "dry-the-wetspot": [
+    {
+      "action_channel": [
+        "humidity",
+        0
+      ],
+      "action_cmd": "on",
+      "action_device": "pump",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule58"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "pump",
+      "trigger_attr": "water.dry",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule59"
+    }
+  ],
+  "ecobee-connect": [],
+  "elder-care-daily-routine": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "elder-care-daily-routine",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time1",
+      "ruleID": "rule60"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "elder-care-daily-routine",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time1",
+      "ruleID": "rule61"
+    }
+  ],
+  "elder-care-slip-fall": [],
+  "energy-alerts": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "energy-alerts",
+      "trigger_attr": "power",
+      "trigger_channel": -1,
+      "trigger_device": "meter",
+      "ruleID": "rule62"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "energy-alerts",
+      "trigger_attr": "power",
+      "trigger_channel": -1,
+      "trigger_device": "meter",
+      "ruleID": "rule63"
+    }
+  ],
+  "energy-saver": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "power",
+      "trigger_channel": -1,
+      "trigger_device": "meter",
+      "ruleID": "rule64"
+    }
+  ],
+  "enhanced-auto-lock-door": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "unlock",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule65"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule66"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "lock",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule67"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule68"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "unlock",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule69"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "lock",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule70"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule71"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule72"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "enhanced-auto-lock-door",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule73"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "lock.closed",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule74"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "unlock.closed",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule75"
+    }
+  ],
+  "every-element": [],
+  "feed-my-pet": [],
+  "flood-alert": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "flood-alert",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule76"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "flood-alert",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "alarm",
+      "ruleID": "rule77"
+    }
+  ],
+  "forgiving-security": [],
+  "foscam-connect": [],
+  "garage-door-monitor": [],
+  "garage-door-opener": [],
+  "gentle-wake-up": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "gentle-wake-up",
+      "trigger_attr": "appHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule78"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "gentle-wake-up",
+      "trigger_attr": "locationHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule79"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "completionSwitches",
+      "trigger_attr": "scheduledStart",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule80"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "completionSwitches",
+      "trigger_attr": "locationHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule81"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "completionMusicPlayer",
+      "trigger_attr": "appHandler.touch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule82"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "gentle-wake-up",
+      "trigger_attr": "appHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule83"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "gentle-wake-up",
+      "trigger_attr": "locationHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule84"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "completionMusicPlayer",
+      "trigger_attr": "scheduledStart",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule85"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "completionSwitches",
+      "trigger_attr": "appHandler.touch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule86"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "gentle-wake-up",
+      "trigger_attr": "scheduledStart",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule87"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "gentle-wake-up",
+      "trigger_attr": "scheduledStart",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule88"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "completionMusicPlayer",
+      "trigger_attr": "locationHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule89"
+    }
+  ],
+  "gideon-smart-home": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "gideon-smart-home",
+      "trigger_attr": "present",
+      "trigger_channel": -1,
+      "trigger_device": "presence_sensors",
+      "ruleID": "rule90"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "present",
+      "trigger_channel": -1,
+      "trigger_device": "presence_sensors",
+      "ruleID": "rule91"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "gideon-smart-home",
+      "trigger_attr": "lock",
+      "trigger_channel": -1,
+      "trigger_device": "locks",
+      "ruleID": "rule92"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "lock",
+      "trigger_channel": -1,
+      "trigger_device": "locks",
+      "ruleID": "rule93"
+    }
+  ],
+  "gideon": [
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "locks",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule94"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule95"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "gideon",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule96"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule97"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule98"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "outlets",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule99"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "locks",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule100"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "gideon",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule101"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "outlets",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule102"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "outlets",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule103"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "locks",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule104"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "outlets",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule105"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "locks",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule106"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "outlet",
+      "ruleID": "rule107"
+    }
+  ],
+  "gidjit-hub": [],
+  "good-night-house": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switcheson",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule108"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "lock1",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule109"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switchesoff",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule110"
+    }
+  ],
+  "good-night": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "good-night",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "switches",
+      "ruleID": "rule111"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "good-night",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "switches",
+      "ruleID": "rule112"
+    }
+  ],
+  "goodnight-ubi": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "goodnight-ubi",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "trigger",
+      "ruleID": "rule113"
+    }
+  ],
+  "greetings-earthling": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "greetings-earthling",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule114"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "greetings-earthling",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule115"
+    }
+  ],
+  "habit-helper": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "habit-helper",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time1",
+      "ruleID": "rule116"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "habit-helper",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time1",
+      "ruleID": "rule117"
+    }
+  ],
+  "hall-light-welcome-home": [
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule118"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "sensors",
+      "ruleID": "rule119"
+    }
+  ],
+  "has-barkley-been-fed": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "has-barkley-been-fed",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time1",
+      "ruleID": "rule120"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "has-barkley-been-fed",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time1",
+      "ruleID": "rule121"
+    }
+  ],
+  "hello-home-phrase-director": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "hello-home-phrase-director",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule122"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "hello-home-phrase-director",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule123"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "hello-home-phrase-director",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule124"
+    }
+  ],
+  "hub-ip-notifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "hub-ip-notifier",
+      "trigger_attr": "hubInfo",
+      "trigger_channel": -1,
+      "trigger_device": "hub",
+      "ruleID": "rule125"
+    }
+  ],
+  "hue-connect": [],
+  "hue-mood-lighting": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule126"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule127"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule128"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule129"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule130"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule131"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule132"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule133"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule134"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule135"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule136"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule137"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule138"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule139"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule140"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule141"
+    }
+  ],
+  "humidity-alert": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "humidity <= humidity2",
+      "trigger_channel": [
+        "humidity",
+        0
+      ],
+      "trigger_device": "humiditySensor1",
+      "ruleID": "rule142"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "humidity >= humidity1",
+      "trigger_channel": [
+        "humidity",
+        1
+      ],
+      "trigger_device": "humiditySensor1",
+      "ruleID": "rule143"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "humidity-alert",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humiditySensor1",
+      "ruleID": "rule144"
+    }
+  ],
+  "ifttt": [],
+  "initial-state-event-streamer": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "energy",
+      "trigger_channel": -1,
+      "trigger_device": "energyMeters",
+      "ruleID": "rule145"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "switches",
+      "ruleID": "rule146"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "heatingSetpoint",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule147"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "smoke",
+      "trigger_channel": -1,
+      "trigger_device": "smokeDetectors",
+      "ruleID": "rule148"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "status",
+      "trigger_channel": -1,
+      "trigger_device": "musicPlayers",
+      "ruleID": "rule149"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "lock",
+      "trigger_channel": -1,
+      "trigger_device": "locks",
+      "ruleID": "rule150"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule151"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "power",
+      "trigger_channel": -1,
+      "trigger_device": "powerMeters",
+      "ruleID": "rule152"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "saturation",
+      "trigger_channel": -1,
+      "trigger_device": "colors",
+      "ruleID": "rule153"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "alarm",
+      "trigger_channel": -1,
+      "trigger_device": "alarms",
+      "ruleID": "rule154"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "contact",
+      "trigger_channel": -1,
+      "trigger_device": "valves",
+      "ruleID": "rule155"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "trackDescription",
+      "trigger_channel": -1,
+      "trigger_device": "musicPlayers",
+      "ruleID": "rule156"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "illuminance",
+      "trigger_channel": -1,
+      "trigger_device": "illuminances",
+      "ruleID": "rule157"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "temperatures",
+      "ruleID": "rule158"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "switch",
+      "trigger_channel": -1,
+      "trigger_device": "relaySwitches",
+      "ruleID": "rule159"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "carbonMonoxide",
+      "trigger_channel": -1,
+      "trigger_device": "cos",
+      "ruleID": "rule160"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule161"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "motion",
+      "trigger_channel": -1,
+      "trigger_device": "motions",
+      "ruleID": "rule162"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "trackData",
+      "trigger_channel": -1,
+      "trigger_device": "musicPlayers",
+      "ruleID": "rule163"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "level",
+      "trigger_channel": -1,
+      "trigger_device": "switchLevels",
+      "ruleID": "rule164"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "color",
+      "trigger_channel": -1,
+      "trigger_device": "colors",
+      "ruleID": "rule165"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "hue",
+      "trigger_channel": -1,
+      "trigger_device": "colors",
+      "ruleID": "rule166"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "mute",
+      "trigger_channel": -1,
+      "trigger_device": "musicPlayers",
+      "ruleID": "rule167"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "water",
+      "trigger_channel": -1,
+      "trigger_device": "waterSensors",
+      "ruleID": "rule168"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "contact",
+      "trigger_channel": -1,
+      "trigger_device": "contacts",
+      "ruleID": "rule169"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "sleeping",
+      "trigger_channel": -1,
+      "trigger_device": "sleepSensors",
+      "ruleID": "rule170"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "thermostatFanMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule171"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humidities",
+      "ruleID": "rule172"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "goal",
+      "trigger_channel": -1,
+      "trigger_device": "peds",
+      "ruleID": "rule173"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "acceleration",
+      "trigger_channel": -1,
+      "trigger_device": "accelerometers",
+      "ruleID": "rule174"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "level",
+      "trigger_channel": -1,
+      "trigger_device": "musicPlayers",
+      "ruleID": "rule175"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "battery",
+      "trigger_channel": -1,
+      "trigger_device": "batteries",
+      "ruleID": "rule176"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "coolingSetpoint",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule177"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "beacons",
+      "ruleID": "rule178"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "steps",
+      "trigger_channel": -1,
+      "trigger_device": "peds",
+      "ruleID": "rule179"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presences",
+      "ruleID": "rule180"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "thermostatOperatingState",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule181"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "initial-state-event-streamer",
+      "trigger_attr": "thermostatSetpoint",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule182"
+    }
+  ],
+  "it-moved": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "it-moved",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule183"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "it-moved",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule184"
+    }
+  ],
+  "its-too-cold": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "temperature <= temperature1",
+      "trigger_channel": [
+        "temperature",
+        0
+      ],
+      "trigger_device": "temperatureSensor1",
+      "ruleID": "rule185"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "its-too-cold",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "temperatureSensor1",
+      "ruleID": "rule186"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "its-too-cold",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "temperatureSensor1",
+      "ruleID": "rule187"
+    }
+  ],
+  "its-too-hot": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "its-too-hot",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "temperatureSensor1",
+      "ruleID": "rule188"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "temperature >= temperature1",
+      "trigger_channel": [
+        "temperature",
+        1
+      ],
+      "trigger_device": "temperatureSensor1",
+      "ruleID": "rule189"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "its-too-hot",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "temperatureSensor1",
+      "ruleID": "rule190"
+    }
+  ],
+  "jawbone-button-notifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "jawbone-button-notifier",
+      "trigger_attr": "sleeping",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule191"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "jawbone-button-notifier",
+      "trigger_attr": "sleeping",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule192"
+    }
+  ],
+  "jawbone-up-connect": [],
+  "jenkins-notifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "checkServer",
+      "trigger_channel": -1,
+      "trigger_device": "cron",
+      "ruleID": "rule193"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "checkServer",
+      "trigger_channel": -1,
+      "trigger_device": "cron",
+      "ruleID": "rule194"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "checkServer",
+      "trigger_channel": -1,
+      "trigger_device": "cron",
+      "ruleID": "rule195"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "jenkins-notifier",
+      "trigger_attr": "checkServer",
+      "trigger_channel": -1,
+      "trigger_device": "cron",
+      "ruleID": "rule196"
+    }
+  ],
+  "keep-me-cozy-ii": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule197"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule198"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostat",
+      "ruleID": "rule199"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "thermostat",
+      "ruleID": "rule200"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule201"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostat",
+      "ruleID": "rule202"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule203"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "thermostat",
+      "ruleID": "rule204"
+    }
+  ],
+  "keep-me-cozy": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule205"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule206"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule207"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule208"
+    }
+  ],
+  "laundry-monitor": [],
+  "left-it-open": [],
+  "let-there-be-dark": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule209"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule210"
+    }
+  ],
+  "let-there-be-light": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule211"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule212"
+    }
+  ],
+  "life360-connect": [],
+  "lifx-connect": [],
+  "light-follows-me": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule213"
+    }
+  ],
+  "light-up-the-night": [
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "illuminance < 30",
+      "trigger_channel": [
+        "illuminance",
+        0
+      ],
+      "trigger_device": "lightSensor",
+      "ruleID": "rule214"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "lights",
+      "trigger_attr": "illuminance > 50",
+      "trigger_channel": [
+        "illuminance",
+        1
+      ],
+      "trigger_device": "lightSensor",
+      "ruleID": "rule215"
+    }
+  ],
+  "lighting-director": [],
+  "lights-off-when-closed": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule216"
+    }
+  ],
+  "lights-off-with-no-motion-and-presence": [],
+  "lock-it-at-a-specific-time": [
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "lock",
+      "trigger_attr": "setTimeCallback",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule217"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "lock-it-at-a-specific-time",
+      "trigger_attr": "setTimeCallback",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule218"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "lock-it-at-a-specific-time",
+      "trigger_attr": "setTimeCallback",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule219"
+    }
+  ],
+  "lock-it-when-i-leave": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "lock-it-when-i-leave",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule220"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule221"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "lock1",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule222"
+    }
+  ],
+  "logitech-harmony-connect": [],
+  "mail-arrived": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "mail-arrived",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule223"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "mail-arrived",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule224"
+    }
+  ],
+  "make-it-so": [
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "thermostats",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule225"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "thermostats",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule226"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "locks",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule227"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "switches",
+      "trigger_attr": "changedLocationMode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule228"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "locks",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule229"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "switches",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule230"
+    }
+  ],
+  "medicine-management-contact-sensor": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-management-contact-sensor",
+      "trigger_attr": "checkOpenDrawInPast",
+      "trigger_channel": -1,
+      "trigger_device": "reminderTime",
+      "ruleID": "rule231"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHue",
+      "action_device": "deviceLight",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "deviceContactSensor",
+      "ruleID": "rule232"
+    }
+  ],
+  "medicine-management-temp-motion": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setHue",
+      "action_device": "deviceLight",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "deviceAccelerationSensor",
+      "ruleID": "rule233"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-management-temp-motion",
+      "trigger_attr": "checkMotionInPast",
+      "trigger_channel": -1,
+      "trigger_device": "reminderTime",
+      "ruleID": "rule234"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-management-temp-motion",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "deviceTemperatureMeasurement",
+      "ruleID": "rule235"
+    }
+  ],
+  "medicine-reminder": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck0",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule236"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck3",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule237"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck0",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule238"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck2",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule239"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck3",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule240"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck2",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule241"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck1",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule242"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "medicine-reminder",
+      "trigger_attr": "scheduleCheck1",
+      "trigger_channel": -1,
+      "trigger_device": "endTime",
+      "ruleID": "rule243"
+    }
+  ],
+  "mini-hue-controller": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "bulbs",
+      "trigger_attr": "button.held",
+      "trigger_channel": -1,
+      "trigger_device": "controller",
+      "ruleID": "rule244"
+    }
+  ],
+  "monitor-on-sense": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule245"
+    }
+  ],
+  "mood-cube": [
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "lights",
+      "trigger_attr": "threeAxis",
+      "trigger_channel": -1,
+      "trigger_device": "cube",
+      "ruleID": "rule246"
+    }
+  ],
+  "my-light-toggle": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "masterToggle",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionToggler",
+      "ruleID": "rule247"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switchesToToggle",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionToggler",
+      "ruleID": "rule248"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switchesToToggle",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionToggler",
+      "ruleID": "rule249"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "masterToggle",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionToggler",
+      "ruleID": "rule250"
+    }
+  ],
+  "netatmo-connect": [],
+  "nfc-tag-toggle": [
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "lock",
+      "trigger_attr": "touchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule251"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "lock",
+      "trigger_attr": "touchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule252"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "lock",
+      "trigger_attr": "nfcTouch",
+      "trigger_channel": -1,
+      "trigger_device": "tag",
+      "ruleID": "rule253"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "garageDoor",
+      "trigger_attr": "nfcTouch",
+      "trigger_channel": -1,
+      "trigger_device": "tag",
+      "ruleID": "rule254"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "lock",
+      "action_device": "lock",
+      "trigger_attr": "nfcTouch",
+      "trigger_channel": -1,
+      "trigger_device": "tag",
+      "ruleID": "rule255"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock",
+      "trigger_attr": "nfcTouch",
+      "trigger_channel": -1,
+      "trigger_device": "tag",
+      "ruleID": "rule256"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "switch1",
+      "trigger_attr": "nfcTouch",
+      "trigger_channel": -1,
+      "trigger_device": "tag",
+      "ruleID": "rule257"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "garageDoor",
+      "trigger_attr": "touchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule258"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "switch1",
+      "trigger_attr": "touchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule259"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock",
+      "trigger_attr": "touchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule260"
+    }
+  ],
+  "nobody-home": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "nobody-home",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule261"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "nobody-home",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule262"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "nobody-home",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule263"
+    }
+  ],
+  "notify-me-when-it-opens": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when-it-opens",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule264"
+    }
+  ],
+  "notify-me-when": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule265"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule266"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule267"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule268"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule269"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule270"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule271"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule272"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule273"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule274"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button",
+      "ruleID": "rule275"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule276"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "notify-me-when",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule277"
+    }
+  ],
+  "notify-me-with-hue": [
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule278"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule279"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule280"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule281"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule282"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule283"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule284"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule285"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule286"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule287"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule288"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule289"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule290"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule291"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule292"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule293"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule294"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule295"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule296"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule297"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule298"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule299"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule300"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule301"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule302"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule303"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule304"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule305"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule306"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule307"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "hues",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule308"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule309"
+    }
+  ],
+  "obything-music-connect": [],
+  "once-a-day": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "stopTimerCallback",
+      "trigger_channel": -1,
+      "trigger_device": "stopTime",
+      "ruleID": "rule310"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "startTimerCallback",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule311"
+    }
+  ],
+  "opent2t-smartapp-test": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "opent2t-smartapp-test",
+      "trigger_attr": "DeviceDeleted",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule312"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "opent2t-smartapp-test",
+      "trigger_attr": "DeviceUpdated",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule313"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "opent2t-smartapp-test",
+      "trigger_attr": "DeviceCreated",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule314"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "opent2t-smartapp-test",
+      "trigger_attr": "att.name",
+      "trigger_channel": -1,
+      "trigger_device": "myDevice",
+      "ruleID": "rule315"
+    }
+  ],
+  "photo-burst-when": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule316"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule317"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "take",
+      "action_device": "camera",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule318"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule319"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule320"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule321"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule322"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "take",
+      "action_device": "camera",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule323"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "take",
+      "action_device": "camera",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule324"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "take",
+      "action_device": "camera",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule325"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule326"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "take",
+      "action_device": "camera",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule327"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule328"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule329"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule330"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule331"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "photo-burst-when",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule332"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "take",
+      "action_device": "camera",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule333"
+    }
+  ],
+  "plantlink-connector": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "plantlink-connector",
+      "trigger_attr": "moisture_status",
+      "trigger_channel": -1,
+      "trigger_device": "plantlinksensors",
+      "ruleID": "rule334"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "plantlink-connector",
+      "trigger_attr": "battery_status",
+      "trigger_channel": -1,
+      "trigger_device": "plantlinksensors",
+      "ruleID": "rule335"
+    }
+  ],
+  "power-allowance": [],
+  "presence-change-push": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "presence-change-push",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence",
+      "ruleID": "rule336"
+    }
+  ],
+  "presence-change-text": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "presence-change-text",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence",
+      "ruleID": "rule337"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "presence-change-text",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "presence",
+      "ruleID": "rule338"
+    }
+  ],
+  "quirky-connect": [],
+  "ready-for-rain": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ready-for-rain",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "0 0,30 * * * ?",
+      "ruleID": "rule339"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ready-for-rain",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "sensors",
+      "ruleID": "rule340"
+    }
+  ],
+  "ridiculously-automated-garage-door": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "ridiculously-automated-garage-door",
+      "trigger_attr": "contact",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule341"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "push",
+      "action_device": "doorSwitch",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "interiorDoorSensor",
+      "ruleID": "rule342"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ridiculously-automated-garage-door",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "cars",
+      "ruleID": "rule343"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "push",
+      "action_device": "doorSwitch",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "cars",
+      "ruleID": "rule344"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "push",
+      "action_device": "doorSwitch",
+      "trigger_attr": "acceleration",
+      "trigger_channel": -1,
+      "trigger_device": "carDoorSensors",
+      "ruleID": "rule345"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "ridiculously-automated-garage-door",
+      "trigger_attr": "contact",
+      "trigger_channel": -1,
+      "trigger_device": "doorSensor",
+      "ruleID": "rule346"
+    }
+  ],
+  "rise-and-shine": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "rise-and-shine",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensors",
+      "ruleID": "rule347"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "rise-and-shine",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensors",
+      "ruleID": "rule348"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensors",
+      "ruleID": "rule349"
+    }
+  ],
+  "routine-director": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "routine-director",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule350"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "routine-director",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule351"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "routine-director",
+      "trigger_attr": "sunrise",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule352"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "routine-director",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule353"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "routine-director",
+      "trigger_attr": "presence",
+      "trigger_channel": -1,
+      "trigger_device": "people",
+      "ruleID": "rule354"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "routine-director",
+      "trigger_attr": "sunset",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule355"
+    }
+  ],
+  "safe-watch": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "safe-watch",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule356"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "safe-watch",
+      "trigger_attr": "threeAxis",
+      "trigger_channel": -1,
+      "trigger_device": "axis",
+      "ruleID": "rule357"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "safe-watch",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "temp",
+      "ruleID": "rule358"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "safe-watch",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule359"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "safe-watch",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "knock",
+      "ruleID": "rule360"
+    }
+  ],
+  "scheduled-mode-change": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "scheduled-mode-change",
+      "trigger_attr": "changeMode",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule361"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "scheduled-mode-change",
+      "trigger_attr": "changeMode",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule362"
+    }
+  ],
+  "send-ham-bridge-command-when": [],
+  "severe-weather-alert": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "severe-weather-alert",
+      "trigger_attr": "checkForSevereWeather",
+      "trigger_channel": -1,
+      "trigger_device": "cron",
+      "ruleID": "rule363"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "severe-weather-alert",
+      "trigger_attr": "checkForSevereWeather",
+      "trigger_channel": -1,
+      "trigger_device": "cron",
+      "ruleID": "rule364"
+    }
+  ],
+  "shabbat-and-holiday-modes": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "shabbat-and-holiday-modes",
+      "trigger_attr": "endChag",
+      "trigger_channel": -1,
+      "trigger_device": "havdalah",
+      "ruleID": "rule365"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "shabbat-and-holiday-modes",
+      "trigger_attr": "poll",
+      "trigger_channel": -1,
+      "trigger_device": "0 0 8 1/1 * ? *",
+      "ruleID": "rule366"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "shabbat-and-holiday-modes",
+      "trigger_attr": "poll",
+      "trigger_channel": -1,
+      "trigger_device": "0 0 8 1/1 * ? *",
+      "ruleID": "rule367"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "shabbat-and-holiday-modes",
+      "trigger_attr": "setChag",
+      "trigger_channel": -1,
+      "trigger_device": "candlelighting",
+      "ruleID": "rule368"
+    }
+  ],
+  "simple-control": [],
+  "simple-sync-connect": [],
+  "simple-sync-trigger": [
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule369"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule370"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule371"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule372"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule373"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule374"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "motion.inactive",
+      "trigger_channel": -1,
+      "trigger_device": "motionInactive",
+      "ruleID": "rule375"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule376"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule377"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule378"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule379"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule380"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "startActivity",
+      "action_device": "agent",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule381"
+    }
+  ],
+  "single-button-controller": [],
+  "sleepy-time": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "sleepy-time",
+      "trigger_attr": "sleeping",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule382"
+    }
+  ],
+  "smart-alarm": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule383"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule384"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule385"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule386"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "onLocation",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule387"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_motion",
+      "ruleID": "rule388"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "carbonMonoxide.tested",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule389"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule390"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule391"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_contact",
+      "ruleID": "rule392"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_movement",
+      "ruleID": "rule393"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "carbonMonoxide.tested",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_smoke",
+      "ruleID": "rule394"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_water",
+      "ruleID": "rule395"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "onLocation",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule396"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_movement",
+      "ruleID": "rule397"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_water",
+      "ruleID": "rule398"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-alarm",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_contact",
+      "ruleID": "rule399"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-alarm",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "settings.z_motion",
+      "ruleID": "rule400"
+    }
+  ],
+  "smart-auto-lock-unlock": [
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "lock.unlocked",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule401"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule402"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "lock.open",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule403"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule404"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "contact.unlocked",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule405"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "lock.closed",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule406"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "unlock.closed",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule407"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "unlock.unlocked",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule408"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "unlock.open",
+      "trigger_channel": -1,
+      "trigger_device": "lock1",
+      "ruleID": "rule409"
+    }
+  ],
+  "smart-energy-service": [],
+  "smart-home-ventilation": [
+    {
+      "action_channel": -1,
+      "action_cmd": "each",
+      "action_device": "switches",
+      "trigger_attr": "mode",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule410"
+    }
+  ],
+  "smart-humidifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-humidifier",
+      "trigger_attr": "humidity",
+      "trigger_channel": -1,
+      "trigger_device": "humiditySensor1",
+      "ruleID": "rule411"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "humidity <= humidityLow",
+      "trigger_channel": [
+        "humidity",
+        0
+      ],
+      "trigger_device": "humiditySensor1",
+      "ruleID": "rule412"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "humidity >= humidityHigh",
+      "trigger_channel": [
+        "humidity",
+        1
+      ],
+      "trigger_device": "humiditySensor1",
+      "ruleID": "rule413"
+    }
+  ],
+  "smart-light-timer-x-minutes-unless-already-on": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motions",
+      "ruleID": "rule414"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "motion.inactive",
+      "trigger_channel": -1,
+      "trigger_device": "motions",
+      "ruleID": "rule415"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contacts",
+      "ruleID": "rule416"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contacts",
+      "ruleID": "rule417"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "0 * * * * ?",
+      "ruleID": "rule418"
+    }
+  ],
+  "smart-nightlight": [
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "lights",
+      "trigger_attr": "illuminance > 50",
+      "trigger_channel": [
+        "illuminance",
+        1
+      ],
+      "trigger_device": "lightSensor",
+      "ruleID": "rule419"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "lights",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensor",
+      "ruleID": "rule420"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motionSensor",
+      "ruleID": "rule421"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "illuminance < 30",
+      "trigger_channel": [
+        "illuminance",
+        0
+      ],
+      "trigger_device": "lightSensor",
+      "ruleID": "rule422"
+    }
+  ],
+  "smart-security": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "alarms",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule423"
+    }
+  ],
+  "smart-turn-it-on": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switchOne",
+      "trigger_attr": "turnOn",
+      "trigger_channel": -1,
+      "trigger_device": "timeOne",
+      "ruleID": "rule424"
+    }
+  ],
+  "smart-windows": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smart-windows",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "inTemp",
+      "ruleID": "rule425"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smart-windows",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "inTemp",
+      "ruleID": "rule426"
+    }
+  ],
+  "smartblock-chat-sender": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "smartblock-chat-sender",
+      "trigger_attr": "modeChangeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule427"
+    }
+  ],
+  "smartblock-linker": [],
+  "smartblock-manager": [],
+  "smartblock-notifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "smartBlockNeighborChanged",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule428"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "blockDestroyed.true",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule429"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "smartBlockNeighborChanged",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule430"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "redstoneSignalStrength",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule431"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "smartBlockNeighborChanged",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule432"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "blockDestroyed.true",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule433"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "redstoneSignalStrength",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule434"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "blockDestroyed.true",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule435"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "smartblock-notifier",
+      "trigger_attr": "redstoneSignalStrength",
+      "trigger_channel": -1,
+      "trigger_device": "smartBlock",
+      "ruleID": "rule436"
+    }
+  ],
+  "smartweather-station-controller": [],
+  "sonos-music-modes": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule437"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule438"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule439"
+    }
+  ],
+  "sonos-remote-control": [
+    {
+      "action_channel": -1,
+      "action_cmd": "previousTrack",
+      "action_device": "sonos",
+      "trigger_attr": "button",
+      "trigger_channel": -1,
+      "trigger_device": "buttonDevice",
+      "ruleID": "rule440"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "nextTrack",
+      "action_device": "sonos",
+      "trigger_attr": "button",
+      "trigger_channel": -1,
+      "trigger_device": "buttonDevice",
+      "ruleID": "rule441"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "button",
+      "trigger_channel": -1,
+      "trigger_device": "buttonDevice",
+      "ruleID": "rule442"
+    }
+  ],
+  "speaker-control": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule443"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule444"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule445"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule446"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule447"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule448"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule449"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule450"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule451"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule452"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule453"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule454"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule455"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule456"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule457"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule458"
+    }
+  ],
+  "speaker-mood-music": [
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule459"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule460"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule461"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule462"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule463"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule464"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule465"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule466"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule467"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule468"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule469"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule470"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule471"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule472"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule473"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule474"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule475"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule476"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule477"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule478"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule479"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule480"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule481"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule482"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule483"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule484"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule485"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule486"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule487"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule488"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule489"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule490"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule491"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule492"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule493"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule494"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule495"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule496"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule497"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule498"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule499"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule500"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule501"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule502"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "stop",
+      "action_device": "sonos",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule503"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule504"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "sonos",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule505"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule506"
+    }
+  ],
+  "speaker-notify-with-sound": [],
+  "speaker-weather-forecast": [
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "carbonMonoxide.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule507"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "button.pushed",
+      "trigger_channel": -1,
+      "trigger_device": "button1",
+      "ruleID": "rule508"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "water.wet",
+      "trigger_channel": -1,
+      "trigger_device": "water",
+      "ruleID": "rule509"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.detected",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule510"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "switch.off",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitchOff",
+      "ruleID": "rule511"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule512"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "smoke.tested",
+      "trigger_channel": -1,
+      "trigger_device": "smoke",
+      "ruleID": "rule513"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule514"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule515"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule516"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule517"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "arrivalPresence",
+      "ruleID": "rule518"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "contactClosed",
+      "ruleID": "rule519"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "scheduledTimeHandler",
+      "trigger_channel": -1,
+      "trigger_device": "timeOfDay",
+      "ruleID": "rule520"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "modeChangeHandler.triggerModes",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule521"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "departurePresence",
+      "ruleID": "rule522"
+    }
+  ],
+  "sprayer-controller-2": [
+    {
+      "action_channel": [
+        "humidity",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "valves1",
+      "trigger_attr": "openValve",
+      "trigger_channel": -1,
+      "trigger_device": "startTime",
+      "ruleID": "rule523"
+    }
+  ],
+  "spruce-scheduler": [],
+  "step-notifier": [
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "sonos",
+      "trigger_attr": "steps",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule524"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setColor",
+      "action_device": "hues",
+      "trigger_attr": "steps",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule525"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        0
+      ],
+      "action_cmd": "off",
+      "action_device": "lights",
+      "trigger_attr": "steps",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule526"
+    },
+    {
+      "action_channel": [
+        "illuminance",
+        1
+      ],
+      "action_cmd": "on",
+      "action_device": "lights",
+      "trigger_attr": "steps",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule527"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "step-notifier",
+      "trigger_attr": "steps",
+      "trigger_channel": -1,
+      "trigger_device": "jawbone",
+      "ruleID": "rule528"
+    }
+  ],
+  "sunrise-sunset": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunriseOff",
+      "trigger_attr": "sunriseTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule529"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunriseHandler",
+      "trigger_channel": -1,
+      "trigger_device": "riseTime",
+      "ruleID": "rule530"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunriseOn",
+      "trigger_attr": "sunsetTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule531"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunriseOn",
+      "trigger_attr": "position",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule532"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunriseOn",
+      "trigger_attr": "sunriseTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule533"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunriseOff",
+      "trigger_attr": "sunriseHandler",
+      "trigger_channel": -1,
+      "trigger_device": "riseTime",
+      "ruleID": "rule534"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "position",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule535"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunsetOff",
+      "trigger_attr": "sunsetTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule536"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunriseOff",
+      "trigger_attr": "position",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule537"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunsetOn",
+      "trigger_attr": "sunsetHandler",
+      "trigger_channel": -1,
+      "trigger_device": "setTime",
+      "ruleID": "rule538"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunsetHandler",
+      "trigger_channel": -1,
+      "trigger_device": "setTime",
+      "ruleID": "rule539"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunsetOff",
+      "trigger_attr": "sunriseTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule540"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "position",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule541"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunsetOff",
+      "trigger_attr": "sunsetHandler",
+      "trigger_channel": -1,
+      "trigger_device": "setTime",
+      "ruleID": "rule542"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunsetOn",
+      "trigger_attr": "position",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule543"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunriseTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule544"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunsetOn",
+      "trigger_attr": "sunriseTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule545"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunriseOn",
+      "trigger_attr": "sunriseHandler",
+      "trigger_channel": -1,
+      "trigger_device": "riseTime",
+      "ruleID": "rule546"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "sunsetOn",
+      "trigger_attr": "sunsetTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule547"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunriseOff",
+      "trigger_attr": "sunsetTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule548"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "sunsetOff",
+      "trigger_attr": "position",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule549"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunsetTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule550"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunriseHandler",
+      "trigger_channel": -1,
+      "trigger_device": "riseTime",
+      "ruleID": "rule551"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunsetTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule552"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunsetHandler",
+      "trigger_channel": -1,
+      "trigger_device": "setTime",
+      "ruleID": "rule553"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "sunrise-sunset",
+      "trigger_attr": "sunriseTime",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule554"
+    }
+  ],
+  "switch-activates-home-phrase-or-mode": [],
+  "switch-activates-home-phrase": [],
+  "switch-changes-mode": [],
+  "talking-alarm-clock": [
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "summarySonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule555"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "B_sonos",
+      "trigger_attr": "alarm_B",
+      "trigger_channel": -1,
+      "trigger_device": "B_timeStart",
+      "ruleID": "rule556"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "D_thermostats",
+      "trigger_attr": "alarm_D",
+      "trigger_channel": -1,
+      "trigger_device": "D_timeStart",
+      "ruleID": "rule557"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "A_switches",
+      "trigger_attr": "alarm_A",
+      "trigger_channel": -1,
+      "trigger_device": "A_timeStart",
+      "ruleID": "rule558"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "A_thermostats",
+      "trigger_attr": "alarm_A",
+      "trigger_channel": -1,
+      "trigger_device": "A_timeStart",
+      "ruleID": "rule559"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "A_sonos",
+      "trigger_attr": "alarm_A",
+      "trigger_channel": -1,
+      "trigger_device": "A_timeStart",
+      "ruleID": "rule560"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "A_sonos",
+      "trigger_attr": "alarm_A",
+      "trigger_channel": -1,
+      "trigger_device": "A_timeStart",
+      "ruleID": "rule561"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "B_switches",
+      "trigger_attr": "alarm_B",
+      "trigger_channel": -1,
+      "trigger_device": "B_timeStart",
+      "ruleID": "rule562"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "summarySonos",
+      "trigger_attr": "appTouchHandler",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule563"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "C_switches",
+      "trigger_attr": "alarm_C",
+      "trigger_channel": -1,
+      "trigger_device": "C_timeStart",
+      "ruleID": "rule564"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "B_thermostats",
+      "trigger_attr": "alarm_B",
+      "trigger_channel": -1,
+      "trigger_device": "B_timeStart",
+      "ruleID": "rule565"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "C_thermostats",
+      "trigger_attr": "alarm_C",
+      "trigger_channel": -1,
+      "trigger_device": "C_timeStart",
+      "ruleID": "rule566"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "D_thermostats",
+      "trigger_attr": "alarm_D",
+      "trigger_channel": -1,
+      "trigger_device": "D_timeStart",
+      "ruleID": "rule567"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "C_dimmers",
+      "trigger_attr": "alarm_C",
+      "trigger_channel": -1,
+      "trigger_device": "C_timeStart",
+      "ruleID": "rule568"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "B_thermostats",
+      "trigger_attr": "alarm_B",
+      "trigger_channel": -1,
+      "trigger_device": "B_timeStart",
+      "ruleID": "rule569"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "D_switches",
+      "trigger_attr": "alarm_D",
+      "trigger_channel": -1,
+      "trigger_device": "D_timeStart",
+      "ruleID": "rule570"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "C_thermostats",
+      "trigger_attr": "alarm_C",
+      "trigger_channel": -1,
+      "trigger_device": "C_timeStart",
+      "ruleID": "rule571"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "C_sonos",
+      "trigger_attr": "alarm_C",
+      "trigger_channel": -1,
+      "trigger_device": "C_timeStart",
+      "ruleID": "rule572"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "D_dimmers",
+      "trigger_attr": "alarm_D",
+      "trigger_channel": -1,
+      "trigger_device": "D_timeStart",
+      "ruleID": "rule573"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "D_sonos",
+      "trigger_attr": "alarm_D",
+      "trigger_channel": -1,
+      "trigger_device": "D_timeStart",
+      "ruleID": "rule574"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "D_sonos",
+      "trigger_attr": "alarm_D",
+      "trigger_channel": -1,
+      "trigger_device": "D_timeStart",
+      "ruleID": "rule575"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "B_dimmers",
+      "trigger_attr": "alarm_B",
+      "trigger_channel": -1,
+      "trigger_device": "B_timeStart",
+      "ruleID": "rule576"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "A_thermostats",
+      "trigger_attr": "alarm_A",
+      "trigger_channel": -1,
+      "trigger_device": "A_timeStart",
+      "ruleID": "rule577"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "playTrack",
+      "action_device": "B_sonos",
+      "trigger_attr": "alarm_B",
+      "trigger_channel": -1,
+      "trigger_device": "B_timeStart",
+      "ruleID": "rule578"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "C_sonos",
+      "trigger_attr": "alarm_C",
+      "trigger_channel": -1,
+      "trigger_device": "C_timeStart",
+      "ruleID": "rule579"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "A_dimmers",
+      "trigger_attr": "alarm_A",
+      "trigger_channel": -1,
+      "trigger_device": "A_timeStart",
+      "ruleID": "rule580"
+    }
+  ],
+  "tcp-bulbs-connect": [],
+  "tesla-connect": [],
+  "text-me-when-it-opens": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "text-me-when-it-opens",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule581"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "text-me-when-it-opens",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule582"
+    }
+  ],
+  "text-me-when-theres-motion-and-im-not-here": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "text-me-when-theres-motion-and-im-not-here",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule583"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "text-me-when-theres-motion-and-im-not-here",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule584"
+    }
+  ],
+  "the-big-switch": [
+    {
+      "action_channel": -1,
+      "action_cmd": "setLevel",
+      "action_device": "dimSwitches",
+      "trigger_attr": "level",
+      "trigger_channel": -1,
+      "trigger_device": "master",
+      "ruleID": "rule585"
+    }
+  ],
+  "the-flasher": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "myPresence",
+      "ruleID": "rule586"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "myPresence",
+      "ruleID": "rule587"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule588"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule589"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "myPresence",
+      "ruleID": "rule590"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule591"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact",
+      "ruleID": "rule592"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule593"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule594"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "switch.on",
+      "trigger_channel": -1,
+      "trigger_device": "mySwitch",
+      "ruleID": "rule595"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "myPresence",
+      "ruleID": "rule596"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "acceleration",
+      "ruleID": "rule597"
+    }
+  ],
+  "the-gun-case-moved": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "the-gun-case-moved",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule598"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "the-gun-case-moved",
+      "trigger_attr": "acceleration.active",
+      "trigger_channel": -1,
+      "trigger_device": "accelerationSensor",
+      "ruleID": "rule599"
+    }
+  ],
+  "thermostat-auto-off": [],
+  "thermostat-mode-director": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "modeBoostChange",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule600"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat1",
+      "trigger_attr": "modeBoostChange",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule601"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "doors",
+      "ruleID": "rule602"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule603"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "doors",
+      "ruleID": "rule604"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat1",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule605"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setHeatingSetpoint",
+      "action_device": "thermostat1",
+      "trigger_attr": "modeBoostChange",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule606"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "modeBoostChange",
+      "trigger_channel": -1,
+      "trigger_device": "location",
+      "ruleID": "rule607"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "doors",
+      "ruleID": "rule608"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "setCoolingSetpoint",
+      "action_device": "thermostat1",
+      "trigger_attr": "appTouch",
+      "trigger_channel": -1,
+      "trigger_device": "app",
+      "ruleID": "rule609"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule610"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "thermostat-mode-director",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "doors",
+      "ruleID": "rule611"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "thermostat",
+      "trigger_attr": "contact.closed",
+      "trigger_channel": -1,
+      "trigger_device": "doors",
+      "ruleID": "rule612"
+    }
+  ],
+  "thermostat-window-check": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "thermostat-window-check",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostats",
+      "ruleID": "rule613"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "thermostat-window-check",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "sensors",
+      "ruleID": "rule614"
+    }
+  ],
+  "turn-it-on-for-5-minutes": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule615"
+    }
+  ],
+  "turn-it-on-when-im-here": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule616"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule617"
+    }
+  ],
+  "turn-it-on-when-it-opens": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contact1",
+      "ruleID": "rule618"
+    }
+  ],
+  "turn-off-with-motion": [
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switches",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion1",
+      "ruleID": "rule619"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "0 * * * * ?",
+      "ruleID": "rule620"
+    }
+  ],
+  "turn-on-only-if-i-arrive-after-sunset": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switch1",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule621"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "switch1",
+      "trigger_attr": "presence.not present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule622"
+    }
+  ],
+  "ubi": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "ubi",
+      "trigger_attr": "attribute",
+      "trigger_channel": -1,
+      "trigger_device": "myDevice",
+      "ruleID": "rule623"
+    }
+  ],
+  "undead-early-warning": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "switches",
+      "trigger_attr": "contact.open",
+      "trigger_channel": -1,
+      "trigger_device": "contacts",
+      "ruleID": "rule624"
+    }
+  ],
+  "unlock-it-when-i-arrive": [
+    {
+      "action_channel": -1,
+      "action_cmd": "unlock",
+      "action_device": "lock1",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule625"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "unlock-it-when-i-arrive",
+      "trigger_attr": "presence.present",
+      "trigger_channel": -1,
+      "trigger_device": "presence1",
+      "ruleID": "rule626"
+    }
+  ],
+  "vacation-lighting-director": [],
+  "vinli-home-connect": [],
+  "virtual-thermostat": [
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "outlets",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule627"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "outlets",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule628"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "outlets",
+      "trigger_attr": "motion.active",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule629"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "outlets",
+      "trigger_attr": "motion.inactive",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule630"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "outlets",
+      "trigger_attr": "motion.inactive",
+      "trigger_channel": -1,
+      "trigger_device": "motion",
+      "ruleID": "rule631"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "on",
+      "action_device": "outlets",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "sensor",
+      "ruleID": "rule632"
+    }
+  ],
+  "wattvision-manager": [],
+  "weather-underground-pws-connect": [],
+  "weather-windows": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "weather-windows",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "inTemp",
+      "ruleID": "rule633"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "weather-windows",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "inTemp",
+      "ruleID": "rule634"
+    }
+  ],
+  "weatherbug-home": [
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "thermostatFanMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule635"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule636"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "coolingSetpoint",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule637"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule638"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "thermostatOperatingState",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule639"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "heatingSetpoint",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule640"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "http_request",
+      "action_device": "weatherbug-home",
+      "trigger_attr": "thermostatSetpoint",
+      "trigger_channel": -1,
+      "trigger_device": "thermostatDevice",
+      "ruleID": "rule641"
+    }
+  ],
+  "wemo-connect": [],
+  "when-its-going-to-rain": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "when-its-going-to-rain",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule642"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "when-its-going-to-rain",
+      "trigger_attr": "scheduleCheck",
+      "trigger_channel": -1,
+      "trigger_device": "time",
+      "ruleID": "rule643"
+    }
+  ],
+  "whole-house-fan": [
+    {
+      "action_channel": [
+        "temperature",
+        0
+      ],
+      "action_cmd": "on",
+      "action_device": "fans",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "outTemp",
+      "ruleID": "rule644"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "fans",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostat",
+      "ruleID": "rule645"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "fans",
+      "trigger_attr": "contact",
+      "trigger_channel": -1,
+      "trigger_device": "contacts",
+      "ruleID": "rule646"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "fans",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "inTemp",
+      "ruleID": "rule647"
+    },
+    {
+      "action_channel": [
+        "temperature",
+        0
+      ],
+      "action_cmd": "on",
+      "action_device": "fans",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "inTemp",
+      "ruleID": "rule648"
+    },
+    {
+      "action_channel": [
+        "temperature",
+        0
+      ],
+      "action_cmd": "on",
+      "action_device": "fans",
+      "trigger_attr": "contact",
+      "trigger_channel": -1,
+      "trigger_device": "contacts",
+      "ruleID": "rule649"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "off",
+      "action_device": "fans",
+      "trigger_attr": "temperature",
+      "trigger_channel": -1,
+      "trigger_device": "outTemp",
+      "ruleID": "rule650"
+    },
+    {
+      "action_channel": [
+        "temperature",
+        0
+      ],
+      "action_cmd": "on",
+      "action_device": "fans",
+      "trigger_attr": "thermostatMode",
+      "trigger_channel": -1,
+      "trigger_device": "thermostat",
+      "ruleID": "rule651"
+    }
+  ],
+  "withings-manager": [],
+  "withings": [],
+  "working-from-home": [
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_sms",
+      "action_device": "working-from-home",
+      "trigger_attr": "checkPresence",
+      "trigger_channel": -1,
+      "trigger_device": "this.timeToday(timeOfDay, location?.timeZone)",
+      "ruleID": "rule652"
+    },
+    {
+      "action_channel": -1,
+      "action_cmd": "sending_notification",
+      "action_device": "working-from-home",
+      "trigger_attr": "checkPresence",
+      "trigger_channel": -1,
+      "trigger_device": "this.timeToday(timeOfDay, location?.timeZone)",
+      "ruleID": "rule653"
+    }
+  ],
+  "yoics-connect": []
+}

@@ -1,0 +1,24 @@
+{
+	"light": { 
+		"on" : [
+			{"condition_device":"motionSensor","condition_cmd":"active","condition_state":"is"},
+			{"condition_device":"presenceSenosr","condition_cmd":"present","condition_state":"is"}
+		],
+		"off" : [
+			{"condition_device":"light","condition_cmd":"on","condition_state":"within 30s"},
+			{"condition_device":"motionSensor","condition_cmd":"inactive","condition_state":"is"}
+		]
+	},
+	"fan": {
+		"on" : [
+			{"condition_device":"heater", "condition_cmd":"off","condition_state":"is"},
+       		{"condition_device":"temperatureSensor","conditino_cmd":"> 75","condition_state":"is"}
+		]
+	},
+	"window": {
+		"open": [
+			{"condition_device":"switch", "condition_cmd":"on","condition_state":"is"}
+		]
+		
+	}
+}
